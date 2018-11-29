@@ -1,0 +1,256 @@
+EESchema Schematic File Version 4
+LIBS:AS5600_moveo_2_circ-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 5BFADBF0
+P 8900 3300
+F 0 "C1" H 9015 3346 50  0000 L CNN
+F 1 "100nF" H 9015 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8938 3150 50  0001 C CNN
+F 3 "~" H 8900 3300 50  0001 C CNN
+	1    8900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5BFADC60
+P 9400 3100
+F 0 "C2" H 9515 3146 50  0000 L CNN
+F 1 "1uF" H 9515 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9438 2950 50  0001 C CNN
+F 3 "~" H 9400 3100 50  0001 C CNN
+	1    9400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3050 8900 3150
+Wire Wire Line
+	8250 3750 8900 3750
+Wire Wire Line
+	9400 3750 8900 3750
+Connection ~ 8900 3750
+$Comp
+L power:GND #PWR03
+U 1 1 5BFADDA4
+P 9400 4000
+F 0 "#PWR03" H 9400 3750 50  0001 C CNN
+F 1 "GND" H 9405 3827 50  0000 C CNN
+F 2 "" H 9400 4000 50  0001 C CNN
+F 3 "" H 9400 4000 50  0001 C CNN
+	1    9400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3750 9400 3900
+Connection ~ 9400 3750
+Wire Wire Line
+	8250 2950 9400 2950
+Wire Wire Line
+	8250 3050 8900 3050
+$Comp
+L power:+5V #PWR01
+U 1 1 5BFADEBE
+P 8900 2700
+F 0 "#PWR01" H 8900 2550 50  0001 C CNN
+F 1 "+5V" H 8915 2873 50  0000 C CNN
+F 2 "" H 8900 2700 50  0001 C CNN
+F 3 "" H 8900 2700 50  0001 C CNN
+	1    8900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5BFADEF0
+P 9400 2700
+F 0 "#PWR02" H 9400 2550 50  0001 C CNN
+F 1 "+3.3V" H 9415 2873 50  0000 C CNN
+F 2 "" H 9400 2700 50  0001 C CNN
+F 3 "" H 9400 2700 50  0001 C CNN
+	1    9400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2700 9400 2750
+Connection ~ 9400 2950
+Wire Wire Line
+	8900 2700 8900 2750
+Connection ~ 8900 3050
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5BFAE004
+P 8650 2700
+F 0 "#FLG01" H 8650 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 8650 2874 50  0000 C CNN
+F 2 "" H 8650 2700 50  0001 C CNN
+F 3 "~" H 8650 2700 50  0001 C CNN
+	1    8650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5BFAE038
+P 9700 2700
+F 0 "#FLG02" H 9700 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 9700 2874 50  0000 C CNN
+F 2 "" H 9700 2700 50  0001 C CNN
+F 3 "~" H 9700 2700 50  0001 C CNN
+	1    9700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5BFAE202
+P 9800 3900
+F 0 "#FLG03" H 9800 3975 50  0001 C CNN
+F 1 "PWR_FLAG" H 9800 4074 50  0000 C CNN
+F 2 "" H 9800 3900 50  0001 C CNN
+F 3 "~" H 9800 3900 50  0001 C CNN
+	1    9800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2700 8650 2750
+Wire Wire Line
+	8650 2750 8900 2750
+Connection ~ 8900 2750
+Wire Wire Line
+	8900 2750 8900 3050
+Wire Wire Line
+	9700 2700 9700 2750
+Wire Wire Line
+	9700 2750 9400 2750
+Connection ~ 9400 2750
+Wire Wire Line
+	9400 2750 9400 2950
+Wire Wire Line
+	9800 3900 9400 3900
+Connection ~ 9400 3900
+Wire Wire Line
+	9400 3900 9400 4000
+Text GLabel 10050 3900 2    50   Input ~ 0
+GND
+Text GLabel 9150 2750 2    50   Input ~ 0
+5V
+Wire Wire Line
+	9150 2750 8900 2750
+Wire Wire Line
+	10050 3900 9800 3900
+Connection ~ 9800 3900
+Text GLabel 5350 1500 2    50   Input ~ 0
+GND
+Text GLabel 5350 1200 2    50   Input ~ 0
+5V
+Text GLabel 5900 3550 0    50   Input ~ 0
+SDA
+Text GLabel 5900 3450 0    50   Input ~ 0
+SCL
+$Comp
+L Device:R R1
+U 1 1 5BFB0196
+P 6050 3050
+F 0 "R1" H 6120 3096 50  0000 L CNN
+F 1 "4K7" H 6120 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5980 3050 50  0001 C CNN
+F 3 "~" H 6050 3050 50  0001 C CNN
+	1    6050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BFB01F0
+P 6300 3050
+F 0 "R2" H 6370 3096 50  0000 L CNN
+F 1 "4K7" H 6370 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6230 3050 50  0001 C CNN
+F 3 "~" H 6300 3050 50  0001 C CNN
+	1    6300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3200 6050 3450
+Wire Wire Line
+	5900 3450 6050 3450
+Text GLabel 5850 2750 0    50   Input ~ 0
+5V
+Wire Wire Line
+	6050 2750 6050 2900
+Wire Wire Line
+	6300 2900 6300 2750
+Wire Wire Line
+	6050 3450 6450 3450
+Wire Wire Line
+	5900 3550 6300 3550
+Text GLabel 5350 1400 2    50   Input ~ 0
+SCL
+Text GLabel 5350 1300 2    50   Input ~ 0
+SDA
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5BFB7E9C
+P 4800 1300
+F 0 "J1" H 4906 1578 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 4906 1487 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4800 1300 50  0001 C CNN
+F 3 "~" H 4800 1300 50  0001 C CNN
+	1    4800 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1200 5350 1200
+Wire Wire Line
+	5000 1300 5350 1300
+Wire Wire Line
+	5000 1400 5350 1400
+Wire Wire Line
+	5000 1500 5350 1500
+$Comp
+L AS5600-ASOT:AS5600-ASOT U1
+U 1 1 5BFC77B5
+P 7350 3350
+F 0 "U1" H 7350 4020 50  0000 C CNN
+F 1 "AS5600-ASOT" H 7350 3929 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7350 3350 50  0001 L BNN
+F 3 "AS5600-ASOT" H 7350 3350 50  0001 L BNN
+F 4 "Rotary Position Sensor 5.5V/3.6V Digital Output 8-Pin SOIC T/R" H 7350 3350 50  0001 L BNN "Campo4"
+F 5 "Good" H 7350 3350 50  0001 L BNN "Campo5"
+F 6 "2.55 USD" H 7350 3350 50  0001 L BNN "Campo6"
+F 7 "SOIC-8 ams" H 7350 3350 50  0001 L BNN "Campo7"
+F 8 "ams" H 7350 3350 50  0001 L BNN "Campo8"
+	1    7350 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3450 8900 3750
+Wire Wire Line
+	9400 3250 9400 3750
+Connection ~ 6050 2750
+Connection ~ 6050 3450
+Wire Wire Line
+	6050 2750 6300 2750
+Wire Wire Line
+	6300 3200 6300 3550
+Wire Wire Line
+	5950 2750 6050 2750
+Wire Wire Line
+	5850 2750 6050 2750
+Connection ~ 6300 3550
+Wire Wire Line
+	6300 3550 6450 3550
+NoConn ~ 6450 3250
+NoConn ~ 6450 3350
+NoConn ~ 8250 3250
+$EndSCHEMATC
